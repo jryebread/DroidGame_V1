@@ -12,19 +12,24 @@ int main()
 	std::string mystring2 = "...Is anyone there?\n";
 	int wait = 800;
 	int typespeed = 70;
-
-	cout << "INITIALIZING CONNECTION...\n";
+	//intro 
+	//-----
+/*cout << "INITIALIZING CONNECTION...\n";
 	cout << "CONNECTION ESTABLISHED! - \n\n";
 	waitType(mystring,mystring2, wait, typespeed);
 	cin >> input;
-	mystring = "Hello! It's unbelievable you're alive! Your ship has lost all power and is non-functional..\n";
-	mystring2 = "The little drone on board could save your life! Activate it by the command: drone1 activate \n";
-	waitType(mystring, mystring2, wait, typespeed);
+	mystring = "Hello! It's unbelievable you're alive! Your ship has lost all power..\n";
+	mystring2 = "The little drone on board could save your life! Activate it by the command: \ndrone1 activate \n";
+	waitType(mystring, mystring2, wait, typespeed);*/
+	//-----
+
+
+
 	
 
 	return 0;
 }
-
+//function takes two sentences and types them
 void waitType(std::string sentence1, std::string sentence2, int wait, int typespeed)
 {
 	for (int x = 0; x < sentence1.length(); x++)
