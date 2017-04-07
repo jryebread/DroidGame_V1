@@ -1,4 +1,6 @@
 #include <iostream>
+#include "Drone.h"
+#include "Entity.h"
 #include <string>
 #include <chrono>
 #include <thread>
@@ -19,10 +21,14 @@ int main()
 	waitType(mystring,mystring2, wait, typespeed);
 	cin >> input;
 	mystring = "Hello! It's unbelievable you're alive! Your ship has lost all power..\n";
-	mystring2 = "The little drone on board could save your life! Activate it by the command: \ndrone1 activate \n";
+	mystring2 = "The little drone on board could save your life! Activate it by the command: \ndrone1.activate \n";
 	waitType(mystring, mystring2, wait, typespeed);*/
 	//-----
-
+	Drone drone1;
+	string tempname;
+	cout << "Enter name: "; cin >> tempname; 
+	drone1.setName(tempname);
+	drone1.takeInput();
 
 
 	

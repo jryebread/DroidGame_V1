@@ -98,10 +98,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Drone.cpp" />
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="Event.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Drone.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="Event.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
