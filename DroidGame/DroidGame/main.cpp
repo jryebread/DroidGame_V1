@@ -29,7 +29,7 @@ int main()
 	cout << "Enter name: "; cin >> tempname; 
 	drone1.setName(tempname);
 	drone1.takeInput();
-
+	//Once we get input the game will be like this:
 
 	
 

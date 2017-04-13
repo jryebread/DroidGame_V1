@@ -24,21 +24,37 @@ void Drone::takeInput()
 				current_action += command[x];
 			performAction(current_action);
 		}
+		else
+		{
+			std::cout << "ERR: Drone Unit ID not recognized.4\n";
+		}
+
 	}
 	else
-		cout << "\n NO DRONES OPERATIONAL. GAME OVER";
-		
+		cout << "\n NO DRONES OPERATIONAL. GAME OVER";	
 }
 
 void Drone::performAction(std::string command)
 {
 	if (command == "activate")
 	{
-		this->d_online == true; std::cout << d_name << " online!";
+		this->d_online = true; std::cout << d_name << " online!\n";
 	}
-	else if (command == "move") //test
+	else if (command == "move")
 	{
-		std::cout << d_name << " on the move!";
+		std::cout << d_name << " on the move!\n";
+	}
+	else if (command == "attack")
+	{
+		std::cout << d_name << " fires! pew! pew!";
+	}
+	else if (command == "hi")
+	{
+		std::cout << d_name << " says 'yo!'\n";
+	}
+	else
+	{
+		std::cout << "Command not recognized \n";
 	}
 }
 
@@ -47,6 +63,7 @@ void Drone::setName(std::string name)
 	this->d_name = name;
 }
 
+                                   
 
 
 

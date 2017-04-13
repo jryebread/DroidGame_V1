@@ -8,9 +8,12 @@ Event::Event()
 //TODO
 void Event::showUI()
 {
-	using namespace std;
+	std::cout << "___|" << "|_____";
+}
 
-	cout << "hello";
+std::string Event::promptEvent()
+{
+	return std::string();
 }
 
 
