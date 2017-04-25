@@ -9,21 +9,7 @@ using namespace std;
 void waitType(std::string sentence1, std::string sentence2, int wait, int typespeed);
 int main()
 {
-	int maze[10][13] = { //We could have hallways that are procedurally generated
-		//Need an algorithm to randomize hallways and have access to each of these 
-		//If the place in the array is a 0 can be not shown and block the player
-		//if the place is a 1 in the array it can be shown and traversed by the players move instruction
-		{ 1,1,1,1,1,1,1,1,1,1,1,1,1 },
-		{ 1,0,1,0,1,0,1,0,0,0,0,0,1 },
-		{ 1,0,1,0,0,0,1,0,1,1,1,0,1 },
-		{ 1,0,1,0,1,1,1,1,0,0,0,0,1 },
-		{ 1,0,1,0,0,0,0,0,1,1,1,0,1 },
-		{ 1,0,1,0,1,1,1,0,1,0,0,0,1 },
-		{ 1,0,1,0,1,0,0,0,1,1,1,0,1 },
-		{ 1,0,1,0,1,1,1,0,1,0,1,0,1 },
-		{ 1,0,0,0,1,0,0,0,0,0,0,3,1 },
-		{ 1,1,1,1,1,1,1,1,1,1,1,1,1 }
-	};
+	char maze[20][20];
 	std::string input;
 	std::string mystring = "Hello ? ";
 	std::string mystring2 = "...Is anyone there?\n";
