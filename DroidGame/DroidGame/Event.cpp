@@ -15,6 +15,3 @@ std::string Event::promptEvent()
 {
 	return std::string();
 }
-
-
-

@@ -40,13 +40,25 @@ void Drone::performAction(std::string command)
 	{
 		this->d_online = true; std::cout << d_name << " online!\n";
 	}
-	else if (command == "move")
+	else if (command == "moveup")
 	{
-		std::cout << d_name << " on the move!\n";
+		
+	}
+	else if (command == "movedown")
+	{
+
+	}
+	else if (command == "moveright")
+	{
+
+	}
+	else if (command == "moveleft")
+	{
+
 	}
 	else if (command == "attack")
 	{
-		std::cout << d_name << " fires! pew! pew!";
+		std::cout << d_name << " fires! pew! pew!\n";
 	}
 	else if (command == "hi")
 	{
