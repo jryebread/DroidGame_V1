@@ -13,8 +13,6 @@ int main()
 {
 	srand(time(NULL));
 	char maze[20][20];
-	Event evnt;
-	evnt.genMaze(maze);
 	//evnt.spawnDrone();
 	std::string input;
 	std::string mystring = "Hello ? ";
@@ -32,9 +30,13 @@ int main()
 	waitType(mystring, mystring2, wait, typespeed);*/
 	//-----
 	Drone drone1;
+	Event evnt;
+	evnt.genMaze(maze);
+	evnt.spawnDrone(maze);
 	string tempname;
 	cout << "Enter name: "; cin >> tempname;
 	drone1.setName(tempname);
+	evnt.
 	while (1)
 	{
 	drone1.takeInput();
