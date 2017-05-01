@@ -1,6 +1,5 @@
 #pragma once
 #include <string>
-#include <iostream>
 class Entity
 {
 public:
@@ -8,7 +7,5 @@ public:
 
 protected:
 	std::string name;
-	
-
 };
 
