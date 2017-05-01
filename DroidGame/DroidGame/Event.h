@@ -5,6 +5,8 @@ class Event
 {
 public:
 	Event();
+	void genMaze(char arr[20][20]);
+	void showMaze(char arr[20][20]);
 	void showUI();
 	std::string promptEvent();
 private:
