@@ -1,6 +1,10 @@
 #include "Event.h"
 #include <iostream>
 #include <random>
+#define KEY_UP 72
+#define KEY_DOWN 80
+#define KEY_LEFT 75
+#define KEY_RIGHT 77
 
 Event::Event()
 {}
@@ -36,7 +40,7 @@ void Event::spawnDrone(char arr[20][20])
 {
 	int x = rand() % 19 + 1;
 	int y = rand() % 19 + 1;
-	arr[x][y] = 'o';
+	arr[x][y] = 'p';
 }
 
 
@@ -56,6 +60,29 @@ void Event::showMaze(char arr[20][20])
 void Event::showUI()
 {
 	std::cout << "___|" << "|_____";
+}
+
+void Event::inputMovement()
+{
+	using namespace std;
+	int c = 0;
+	switch ((c = getch()))
+	{
+	case KEY_UP:
+		cout << endl << "Up" << endl;//key up
+		break;
+	case KEY_DOWN:
+		cout << endl << "Down" << endl;   // key down
+		break;
+	case KEY_LEFT:
+		cout << endl << "Left" << endl;  // key left
+		break;
+	case KEY_RIGHT:
+		cout << endl << "Right" << endl;  // key right
+		break;
+	default:
+		break;
+	}
 }
 
 std::string Event::promptEvent()
